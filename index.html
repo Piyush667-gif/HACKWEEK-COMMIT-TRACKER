@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSC Commit Counter - HackWeek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="shooting-stars">
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1 class="typing-text">CBIT Open Source Community</h1>
+            <p class="subtitle">HackWeek Commit Tracker</p>
+        </header>
+        
+        <main class="counter-section">
+            <div class="counter-display">
+                <div class="counter-label">Total Commits</div>
+                <div class="counter-value" id="counterValue">0</div>
+                <div class="counter-status" id="counterStatus">Ready to track commits!</div>
+            </div>
+            
+            <div class="button-group">
+                <button class="btn btn-increment" id="incrementBtn">
+                    <span class="btn-icon">+</span>
+                    <span class="btn-text">New Commit</span>
+                </button>
+                
+                <button class="btn btn-decrement" id="decrementBtn">
+                    <span class="btn-icon">-</span>
+                    <span class="btn-text">Revert</span>
+                </button>
+                
+                <button class="btn btn-reset" id="resetBtn">
+                    <span class="btn-icon">↻</span>
+                    <span class="btn-text">Reset Day</span>
+                </button>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Building the future, one commit at a time 🚀</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
